@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+    <link rel="stylesheet" type="text/css" href="../css/search.css" />
+    
+  </head>
+  <body>
+
+    <nav id="navbarId" style="background-color: #f1f1f1;">
+        <div class="navbar" id="navbar-content">
+          
+          <a  id="sidebar" class="side-three-icon" onclick="openSidebar()">&#9776</a>
+          <a href="#" id="logo"><img src="../images/195260289_952747075517082_4000494032215260164_n.png"></a>
+          <div class="icon-bar">
+            
+  
+            <span class="nav-notification">
+              <a href="#"><i class="material-icons">shopping_cart</i></a>
+              </span>
+      
+            <span class="nav-notification">
+              <a href="#"><i 	class="material-icons">&#xe7f7</i></a></span>
+            
+            <span class="nav-notification"><a href="#"><i class="material-icons">&#xe7fe</i></a></span>
+            </div>
+        </div>
+  
+        <section class="content-section">
+        
+       
+          <div class="content-part" id="nav-section">
+            <a id="close" href="javascript:void(0)" class="closebtn" onclick="close_sidebar()">&times</a>
+            <span><a href="./company.html" target="_blank" class="nav-item">Our company</a></span>
+            <span><a href="./brand.html" class="nav-item">Brands</a></span>
+            <span> <a href="./shopping.html" class="nav-item">Shopping</a></span>
+            <span><a href="" class="nav-item">News</a></span>
+            <span> <a href="" class="nav-item">About</a></span>
+            <a href="./search.html" class="nav-item">
+              <i class="fa fa-search Searching"></i>
+            </a>
+           
+          </div>
+          
+          <script src="../javascript/navbar.js"></script>
+        </section>
+  
+        
+      </nav>
+
+
+      <section>
+        <!-- search option -->
+
+        <div class="search" >
+          
+            <div class="child-search">
+
+              <div class="real-search">
+
+                <input width="100%" id="Search" type="search" placeholder="Search">
+              </div>
+
+              
+            </div>
+          
+         
+        </div>
+
+
+
+
+        <!-- drop down menu -->
+
+        <div class="dropdown">
+
+          
+            <p  >All Content Type <i  onclick="dropfunction()" id="drop"  class="fa fa-caret-down  droptext" aria-hidden="true"></i></p>
+            <div id="content" class="dropdown-content">
+              <a href="#">Brands</a>
+              <a href="#">FAQ</a>
+              <a href="#">Policy</a>
+              <a href="#">Report</a>
+
+              <script src="../javascript/search_dropdown.js"></script>
+          </div>
+
+
+          
+         
+
+          
+
+
+        </div>
+      </section>
+
+  </body>
+</html>

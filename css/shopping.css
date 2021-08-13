@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.space {
+  padding: 20px 0px;
+}
+
+.shopping-cover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.shopping-cover img {
+  margin-top: 170px;
+  width: 50%;
+}
+.shopping-page-selection {
+  margin: 30px 25px;
+  padding: 30px;
+  font-size: 20px;
+  font-family: sans-serif;
+}
+
+.shopping-page-selection span {
+  /* padding: 0px 20px; */
+  font-weight: bold;
+}
+.shopping-page-selection span a {
+  text-decoration: none;
+  color: black;
+}
+
+.shopping-page-selection span a.same::before {
+  content: "|";
+  display: inline-block;
+  padding: 0px 5px;
+  font-weight: 600;
+  font-size: 25px;
+
+  color: rgb(24, 132, 199);
+}
+
+.shopping-page-selection {
+  text-align: center;
+}
+
+.product-row::after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+
+.card .price {
+  color: gray;
+  font-size: 18px;
+  padding: 10px;
+}
+
+.product-row .card h5 {
+  font-size: 20px;
+}
+.card button {
+  border: none;
+  outline: 0;
+  padding: 10px;
+  color: white;
+  background-color: #000;
+
+  text-align: center;
+  width: 100%;
+  margin-top: 5px;
+}
+.card button:hover {
+  opacity: 0.6;
+}
+.product-column .card img {
+  height: 300px;
+}
+
+.product-row .card {
+  text-align: center;
+}
+
+@media screen and (max-width: 400px) {
+  .product-column .card img {
+    height: 80px;
+  }
+
+  .product-row .card h5 {
+    font-size: 12px;
+  }
+
+  .product-row .card .price {
+    font-size: 10px;
+  }
+  .shopping-page-selection {
+    text-align: center;
+  }
+  .product-column {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .product-row .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+    max-width: 280px;
+    margin: auto;
+    text-align: center;
+    font-family: sans-serif;
+  }
+}
+
+@media screen and (min-width: 601px) {
+  .shopping-page-selection {
+    text-align: left;
+  }
+  .product-column {
+    float: left;
+    width: 33.33%;
+  }
+
+  .product-row .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: sans-serif;
+  }
+
+  .product-column .card img {
+    height: 150px;
+  }
+  .product-row .card {
+    padding: 5px;
+  }
+
+  .card .price {
+    font-size: 12px;
+  }
+
+  .product-row .card h5 {
+    font-size: 1rem;
+  }
+}
